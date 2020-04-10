@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>隱禾居</title>
+    <title> </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,8 +80,11 @@
                 <!-- 註冊登入按鈕 -->
                 <form class="form-inline my-2 my-lg-0">
 
-                    <button class="btn btn-outline-primary my-2 my-sm-0 m-2 text-white" type="submit">登入</button>
-                    <button class="btn btn-primary text-white">註冊</button>
+                    <button class="btn btn-outline-primary my-2 my-sm-0 m-2 text-white" type="button" data-toggle="modal" data-target="#loginModal">登入</button>
+
+                    <button class="btn btn-primary text-white" type="button" data-toggle="modal" data-target="#registerModal-lg">註冊</button>
+
+
                 </form>
             </div>
         </div>
@@ -316,38 +319,143 @@
                             </div>
                         </div>
                     </form>
-                    <!-- 驗證表單 -->
-                    <script>
-                        // Example starter JavaScript for disabling form submissions if there are invalid fields
-                        (function() {
-                            'use strict';
-                            window.addEventListener('load', function() {
-                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                var forms = document.getElementsByClassName('needs-validation');
-                                // Loop over them and prevent submission
-                                var validation = Array.prototype.filter.call(forms, function(form) {
-                                    form.addEventListener('submit', function(event) {
-                                        if (form.checkValidity() === false) {
-                                            event.preventDefault();
-                                            event.stopPropagation();
-                                        }
-                                        form.classList.add('was-validated');
-                                    }, false);
-                                });
-                            }, false);
-                        })();
-                    </script>
+
+
 
                 </div>
             </div>
         </div>
+    </section>
 
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 bg-cover p-4" style="background-image: url(img/f1.jpeg)">
+                    <div class="row mx-3">
+                        <div class="col-md-9 ">
+                            <small>加入我們</small>
+                            <h4>排行榜開關相互，線上醫療讓人只好。</h4>
+                            <p>什麼製作新聞解放否則雙手日子聲音信箱職工新年，帝國正式，職位我看理由四個也想人物命令化工但他作品什 獎勵一是，不管開發等級文學，算是家長點。作新聞解放否則雙手日子聲音信箱職工新年，帝國正式，職位我看理由四個也想人物命令化工但他作品什 獎勵一是，不管開發等級文學，算是家長點。
+                            </p>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="col-md-6 bg-cover p-4" style="background-image: url(img/r7.jpeg)">
+                    <div class="row mx-3">
+                        <div class="col-md-9">
+                            <small>加入我們</small>
+                            <h4>排行榜開關相互，線上醫療讓人只好。</h4>
+                            <p>什麼製作新聞解放否則雙手日子聲音信箱職工新年，帝國正式，職位我看理由四個也想人物命令化工但他作品什。 類型實在列表女友有限訊息獲取，市委激動昨日人間醫療，灌水斑。作新聞解放否則雙手日子聲音信箱職工新年，帝國正式，職位我看理由四個也想人物命令化工但他作品什 獎勵一是，不管開發等級文學，算是家長點。 </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
 
     </section>
 
 
+    <!-- loginModal -->
+    <div class="modal fade " id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <!--關閉按鈕 -->
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" name="loginEmail" class="form-control" aria-describedby="emailHelp" placeholder="請輸入您的Email" required>
 
+
+                            <div class="invalid-feedback">
+                                請輸入email
+                            </div>
+
+                            <label for="password">密碼</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="請輸入您的密碼" aria-describedby="emailHelp" required>
+                            <div class="invalid-feedback">
+                                請輸入密碼
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id=maillcheck>
+                            <label class="form-check-label" for="mailcheck">
+                                  記住帳號
+                            </label>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- data-dismiss="modal"是讓這個連結關閉 -->
+                    <!-- data-toggle="modal" data-target="#registerModal-lg"再去上面寫btn時，如何開啟註冊按鈕的部分複製下來這邊貼上 -->
+                    <a href="#" id="registeBtn" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal-lg">立即註冊</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- registerModal註冊 -->
+    <div class="modal fade bd-example-modal-lg" id="registerModal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title  " id="exampleModalLabel">註冊</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 text-secondary">
+                                <h4>隱禾居</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque aut natus numquam nam aliquid eos animi commodi? Distinctio nobis commodi blanditiis fuga! Consectetur iusto, totam, porro ab et, eveniet corporis
+                                    accusantium autem doloremque sint odio? Facere blanditiis natus a eaque dolor neque, suscipit, corrupti dicta, nobis provident inventore est officiis repellendus. Reiciendis animi pariatur delectus deserunt molestiae
+                                    assumenda fugiat nesciunt fugit fuga et quisquam atque aliquam, earum culpa quas inventore cupiditate reprehenderit blanditiis. Cum iatem ut eum, nihil </p>
+                            </div>
+                            <div class="col-md-6">
+                                <form class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="emailRegister">Email</label>
+                                        <input type="email" class="form-control" id="emailRegister" name="emailRegister" placeholder="請輸入您欲註冊的信箱">
+                                        <small class="d-block text-secondary">我們絕不會隨意將您的email給予第三方</small>
+                                        <label class="mt-3" for="passwordRegister">密碼</label>
+                                        <input type="password" class="form-control" id="passwordRegister" name="passwordRegister" placeholder="密碼">
+                                        <label class="mt-3" for="passwordComfirm">確認密碼</label>
+                                        <input type="password" class="form-control" id="passwordComfirm" name="passwordComfirm" placeholder="再次輸入您的密碼">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="concept">
+                                        <label class="form-check-label" for="concept">
+                                            同意條款
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="mr-auto pl-3" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">前往登入</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">註冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -356,6 +464,55 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/4b71417cef.js " crossorigin="anonymous "></script>
+
+    <!-- 驗證表單訂房表單 -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+
+
+
+        // 修改手機版時，立即登入無法下滑的問題
+        $(document).ready(function() {
+            // console.log('ready');
+            $('a[data-toggle="modal"][data-target="#registerModal-lg"]').on('click', function() {
+                console.log('click');
+                var target = $(this).data('target');
+                console.log('target', target);
+                $(target).on('shown.bs.modal', function() {
+                    $('body').addClass('modal-open');
+                });
+            });
+        });
+        // var el = document.getElementById('registeBtn');
+        // el.addEventListener('click', addclass);
+
+        // function addclass() {
+
+        //     var el2 = document.querySelector('body');
+        //     el2.setAttribute('class', 'modal-open');
+
+        // }
+
+        // <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal-lg">立即註冊</a>
+    </script>
 </body>
 
 </html>
